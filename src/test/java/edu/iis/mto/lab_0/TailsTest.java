@@ -35,5 +35,11 @@ public class TailsTest {
 		
 		assertThat(tails.get(tails.size()-1), Matchers.equalTo(""));
 	}
+	@Test
+	public void tailsOnTheRightPosition() {
+		assertThat(tails.get(1), Matchers.equalTo("ello"));
+		assertThat(tails.get(2), Matchers.equalTo("llo"));
+		assertThat(tails.get(3), Matchers.equalTo("lo"));
+	}
 
 }
